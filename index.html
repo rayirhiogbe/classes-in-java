@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="student1"></p>
+    <p id="student2"></p>
+    <script>
+        class student {
+         constructor(age,name){
+            this.age = age;
+            this.name = name;
+         }
+         age(){
+            let date = new Date();
+            return date.getFullYear-this.age;
+         }
+         greet() {
+                let greeting = "Good morning" ;
+                return greeting + this.name;
+            }
+
+
+        }
+        student1 = new student(20, "RAY");
+         student2 = new student(15, "ROY");
+         document.getElementById("student1").innerHTML = "STUDENT NAME IS" + " "  + student1.name + "<br>" +"STUDENT AGE IS" +" " + student1.age
+          
+    </script>
+</body>
+</html>
